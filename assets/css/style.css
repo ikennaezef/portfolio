@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 
 :root{
 	--header-height: 3rem;
 
 	--hue-color: 200;
 
-	--first-color: hsl(var(--hue-color), 69%, 61%);
-	--first-color-second: hsl(var(--hue-color), 69%, 61%);
-	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+	--first-color: hsl(var(--hue-color), 67%, 48%);
+	--first-color-second: hsl(var(--hue-color), 65%, 50%);
+	--first-color-alt: hsl(var(--hue-color), 57%, 48%);
 	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
 	--title-color: hsl(var(--hue-color), 8%, 15%);
-	--text-color: hsl(var(--hue-color), 8%, 45%);
-	--text-color-light: hsl(var(--hue-color), 8%, 65%);
+	--text-color: hsl(var(--hue-color), 8%, 40%);
+	--text-color-light: hsl(var(--hue-color), 8%, 60%);
 	--input-color: hsl(var(--hue-color), 70%, 96%);
 	--body-color: hsl(var(--hue-color), 60%, 99%);
 	--container-color: #fff;
@@ -53,7 +51,7 @@
 }
 
 
-/*======================= DARK THEME VARIABLES ==========================*/
+/*======================= DARK THEME VARIABLES ==========================
 body.dark-theme {
 
 	--first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -445,7 +443,8 @@ img {
  	margin: var(--m-1) 0;
  }
 
- .about__technologies .technologies button {
+ .about__technologies .technologies .tech__tab {
+ 	display: inline-block;
  	padding: 0.3rem 0.4rem;
  	border-radius: 0.2rem;
  	border: none;
@@ -456,6 +455,10 @@ img {
  	font-size: 0.8rem;
  	box-shadow: 0 0.1rem 0.2rem var(--first-color-second);
  }
+
+  .about__technologies .technologies .tech__tab i {
+  	margin-right: 0.2rem;
+  }
 
  /*=============================== PORTFOLIO ==================================*/
  .portfolio__container {
@@ -664,7 +667,7 @@ img {
 .footer__copy {
 	font-size: var(--smaller-font-size);
 	text-align: center;
-	color: var(--text-color-light);
+	color:#f1f1f1;
 	margin-top: var(--m-3);
 }
 
