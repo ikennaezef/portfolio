@@ -51,7 +51,7 @@
 }
 
 
-/*======================= DARK THEME VARIABLES ==========================
+/*======================= DARK THEME VARIABLES ========================== */
 body.dark-theme {
 
 	--first-color-second: hsl(var(--hue-color), 30%, 8%);
