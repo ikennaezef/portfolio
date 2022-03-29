@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -31,12 +32,7 @@
 						<a href="#about" class="nav__link">
 							<i class="uil uil-user nav__icon" ></i>About
 						</a>
-					</li><!-- 
-					<li class="nav__item">
-						<a href="#skills" class="nav__link">
-							<i class="uil uil-file-alt nav__icon" ></i>Skills
-						</a>
-					</li> -->
+					</li>
 					<li class="nav__item">
 						<a href="#portfolio" class="nav__link">
 							<i class="uil uil-briefcase-alt nav__icon" ></i>Portfolio
@@ -157,6 +153,10 @@
 								<i class="uil uil-github"></i>
 								<span>GitHub</span>
 							</span>
+							<span class="tech__tab">
+								<i class='bx bxl-firebase'></i>
+								<span>Firebase</span>
+							</span>							
 						</div>
 					</div>
 
@@ -174,11 +174,11 @@
 							<span class="about__info-name">Years <br> experience</span>
 						</div> -->
 					</div>
-					<!-- <div class="about__buttons">
-						<a href="#" class="button button--flex" >
+					<div class="about__buttons">
+						<a download=" " href="assets/01A_Ikenna_Eze_Resume.pdf" class="button button--flex" >
 							Download CV <i class="uil uil-download-alt button__icon" ></i>
 						</a>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</section>
@@ -194,7 +194,28 @@
 
 			<div class="portfolio__container container swiper-container">
 				<div class="swiper-wrapper">
+
 					<!-- ================ PROJECT 1 ===================== -->
+					<div class="portfolio__content grid swiper-slide">
+						<img src="assets/images/worldiechat.png" alt="frontend web development project screenshot" class="portfolio__img">						
+						<div class="portfolio__data">
+							<h3 class="portfolio__title">WorldieChat</h3>
+							<p class="portfolio__description">A chat application with different color themes that allows users to send and receive messages in real time.</p>
+							<div class="portfolio__buttons">
+								<a href="https://worldiechat.web.app" target="_blank" class="button button--flex button--small portfolio__button">
+									Demo <i class="uil uil-arrow-right button__icon" ></i>
+								</a>
+								<a href="https://github.com/ikennaezef/worldiechat" target="_blank" class="button button--flex button--small portfolio__button">
+									GitHub <i class="uil uil-github-alt button__icon" ></i>
+								</a>
+							</div>							
+						</div>
+					</div>
+
+
+
+
+					<!-- ================ PROJECT 2 ===================== -->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="assets/images/fylo-landing.jpg" alt="frontend web development project screenshot" class="portfolio__img">						
 						<div class="portfolio__data">
@@ -212,7 +233,7 @@
 						</div>
 					</div>
 
-					<!-- ================ PROJECT 2 ===================== -->
+					<!-- ================ PROJECT 3 ===================== -->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="assets/images/url-short.png" alt="frontend web development project screenshot" class="portfolio__img">						
 						<div class="portfolio__data">
@@ -230,7 +251,7 @@
 						</div>
 					</div>
 
-					<!-- ================ PROJECT 3 ===================== -->
+					<!-- ================ PROJECT 4 ===================== -->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="assets/images/movio-website.png" alt="frontend web development project screenshot" class="portfolio__img">						
 						<div class="portfolio__data">
@@ -248,7 +269,7 @@
 						</div>
 					</div>
 
-					<!-- ================ PROJECT 4 ===================== -->
+					<!-- ================ PROJECT 5 ===================== -->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="assets/images/weather-app.png" alt="frontend web development project screenshot" class="portfolio__img">						
 						<div class="portfolio__data">
