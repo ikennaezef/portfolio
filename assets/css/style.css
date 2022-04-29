@@ -472,7 +472,7 @@ img {
 .portfolio__img {
 	width: 265px;
 	border-radius: 0.5rem;
-	justify-self: center;
+	justify-self: flex-start;
 }
 
 .portfolio__title {
