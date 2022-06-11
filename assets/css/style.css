@@ -1,5 +1,4 @@
-
-:root{
+:root {
 	--header-height: 3rem;
 
 	--hue-color: 200;
@@ -15,7 +14,7 @@
 	--body-color: hsl(var(--hue-color), 60%, 99%);
 	--container-color: #fff;
 	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
 
 
@@ -61,7 +60,7 @@ body.dark-theme {
 	--body-color: hsl(var(--hue-color), 28%, 12%);
 	--container-color: hsl(var(--hue-color), 29%, 16%);
 	--scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+	--scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
 }
 
@@ -110,7 +109,10 @@ body {
 	transition: 0.4s ease;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
 	color: var(--title-color);
 	font-weight: var(--font-semi-bold);
 }
@@ -146,8 +148,8 @@ img {
 }
 
 .section__title,
- .section__subtitle {
- 	text-align: center;
+.section__subtitle {
+	text-align: center;
 }
 
 
@@ -189,24 +191,24 @@ img {
 
 
 .container {
- 	max-width: 850px;
- 	margin-left: var(--m-1-5);
- 	margin-right: var(--m-1-5);
+	max-width: 850px;
+	margin-left: var(--m-1-5);
+	margin-right: var(--m-1-5);
 }
 
 .grid {
- 	display: grid;
- 	grid-gap: 1.5rem;
+	display: grid;
+	grid-gap: 1.5rem;
 }
 
 
 #header {
- 	width: 100%;
- 	position: fixed;
- 	bottom: 0;
- 	left: 0;
- 	z-index: var(--z-fixed);
- 	background-color: var(--body-color);
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--body-color);
 }
 
 .scroll-header {
@@ -215,31 +217,31 @@ img {
 
 /*============================== NAV =======================*/
 
-.nav{
- 	max-width: 968px;
- 	height: var(--header-height);
- 	display: flex;
- 	justify-content: space-between;
- 	align-items: center;
+.nav {
+	max-width: 968px;
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.nav__logo, 
- .nav__toggle {
-  	color: var(--title-color);
-  	font-weight: var(--font-medium);
+.nav__logo,
+.nav__toggle {
+	color: var(--title-color);
+	font-weight: var(--font-medium);
 }
 
 .nav__logo:hover {
- 	color: var(--first-color);
+	color: var(--first-color);
 }
 
 .nav__toggle {
- 	font-size: 1.1rem;
- 	cursor: pointer;
+	font-size: 1.1rem;
+	cursor: pointer;
 }
 
 .nav__toggle:hover {
- 	color: var(--first-color);
+	color: var(--first-color);
 }
 
 
@@ -398,7 +400,8 @@ img {
 }
 
 .about__description {
-	text-align: center;/*
+	text-align: center;
+	/*
 	margin-bottom: var(--m-2-5);*/
 }
 
@@ -408,7 +411,7 @@ img {
 	margin-bottom: var(--m-2-5);
 }
 
-.about__info > div {
+.about__info>div {
 	margin-right: var(--m-2);
 }
 
@@ -423,50 +426,50 @@ img {
 }
 
 .about__info-title,
- .about__info-name {
- 	display: block; 
- 	text-align: center;
- }
+.about__info-name {
+	display: block;
+	text-align: center;
+}
 
- .about__buttons {
- 	display: flex;
- 	justify-content: center;
- }
+.about__buttons {
+	display: flex;
+	justify-content: center;
+}
 
- .about__technologies {
- 	margin: var(--m-1) 0;
- }
+.about__technologies {
+	margin: var(--m-1) 0;
+}
 
- .about__technologies .technologies {
- 	display: flex;
- 	flex-wrap: wrap;
- 	margin: var(--m-1) 0;
- }
+.about__technologies .technologies {
+	display: flex;
+	flex-wrap: wrap;
+	margin: var(--m-1) 0;
+}
 
- .about__technologies .technologies .tech__tab {
- 	display: inline-block;
- 	padding: 0.3rem 0.4rem;
- 	border-radius: 0.2rem;
- 	border: none;
- 	background-color: var(--first-color-second);
- 	color: var(--title-color);
- 	margin: 0.2rem;
- 	font-family: inherit;
- 	font-size: 0.8rem;
- 	box-shadow: 0 0.1rem 0.2rem var(--first-color-second);
- }
+.about__technologies .technologies .tech__tab {
+	display: inline-block;
+	padding: 0.3rem 0.4rem;
+	border-radius: 0.2rem;
+	border: none;
+	background-color: var(--first-color-second);
+	color: var(--title-color);
+	margin: 0.2rem;
+	font-family: inherit;
+	font-size: 0.8rem;
+	box-shadow: 0 0.1rem 0.2rem var(--first-color-second);
+}
 
-  .about__technologies .technologies .tech__tab i {
-  	margin-right: 0.2rem;
-  }
+.about__technologies .technologies .tech__tab i {
+	margin-right: 0.2rem;
+}
 
- /*=============================== PORTFOLIO ==================================*/
- .portfolio__container {
- 	overflow: initial;
- }
+/*=============================== PORTFOLIO ==================================*/
+.portfolio__container {
+	overflow: initial;
+}
 
 .portfolio__content {
- 	padding: 0 1.5rem;
+	padding: 0 1.5rem;
 }
 
 .portfolio__img {
@@ -480,8 +483,16 @@ img {
 	margin-bottom: var(--m-0-5);
 }
 
+#portfolio .section__subtitle a {
+	color: var(--first-color);
+}
+
 .portfolio__description {
 	margin-bottom: var(--m-0-75);
+}
+
+.portfolio__description a {
+	color: var(--first-color);
 }
 
 .portfolio__button {
@@ -514,7 +525,7 @@ img {
 	right: -0.5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets {
 	bottom: -2.5rem;
 }
 
@@ -600,7 +611,7 @@ img {
 .contact__input {
 	width: 100%;
 	background-color: var(--input-color);
-	color: var(--text-color);	
+	color: var(--text-color);
 	font-family: inherit;
 	font-size: var(--normal-font-size);
 	border: none;
@@ -667,7 +678,7 @@ img {
 .footer__copy {
 	font-size: var(--smaller-font-size);
 	text-align: center;
-	color:#f1f1f1;
+	color: #f1f1f1;
 	margin-top: var(--m-3);
 }
 
@@ -709,15 +720,15 @@ img {
 
 /*======================= SCROLL BAR ================================*/
 
-::-webkit-scrollbar{
-    width: .60rem;
-    background-color: var(--scroll-bar-color);
-    border-radius: .5rem;
+::-webkit-scrollbar {
+	width: .60rem;
+	background-color: var(--scroll-bar-color);
+	border-radius: .5rem;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: var(--scroll-thumb-color);
-    border-radius: .5rem;
+::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb-color);
+	border-radius: .5rem;
 }
 
 
@@ -949,7 +960,7 @@ img {
 		right: -3.5rem;
 	}
 
-	.swiper-container-horizontal > .swiper-pagination-bullets {
+	.swiper-container-horizontal>.swiper-pagination-bullets {
 		bottom: -4.5rem;
 	}
 

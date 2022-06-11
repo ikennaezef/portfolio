@@ -1,608 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Check-out Ikenna Eze's frontend developer portfolio website. Ikenna is a frontend web developer based in Nigeria."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Ikenna Eze's Frontend Web Developer Portfolio Website</title>
-  </head>
-  <body>
-    <!-- ================HEADER====================== -->
-    <header id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Ikenna</a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Check-out Ikenna Eze's frontend developer portfolio website. Ikenna is a frontend web developer based in Nigeria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Ikenna Eze's Frontend Web Developer Portfolio Website</title>
+</head>
+
+<body>
+  <!-- ================HEADER====================== -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Ikenna</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
         </div>
-        <div class="nav__btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
+  <!-- ==================== MAIN ======================== -->
+  <main id="main" class="main">
+    <!-- ==================== HOME ======================== -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/ikenna-eze-29b245159" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://twitter.com/lkennae_?t=TnBTSkWqpnzlAzNXfmMALQ&s=03" target="_blank"
+              class="home__social-icon">
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+            <a href="https://github.com/ikennaezef" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- ==================== MAIN ======================== -->
-    <main id="main" class="main">
-      <!-- ==================== HOME ======================== -->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/ikenna-eze-29b245159"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-              <a
-                href="https://twitter.com/lkennae_?t=TnBTSkWqpnzlAzNXfmMALQ&s=03"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-twitter-alt"></i>
-              </a>
-              <a
-                href="https://github.com/ikennaezef"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-github-alt"></i>
-              </a>
-            </div>
-            <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
 						        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
 						        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-						        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+						        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
 						        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
 						        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-						        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="-20"
-                    y="20"
-                    xlink:href="assets/images/mypic.png"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="home__data">
-              <h2 class="home__title">Hi, I'm Ikenna</h2>
-              <h1 class="home__subtitle">Frontend Developer</h1>
-              <p class="home__description">
-                I build frontend products with attractive user interfaces.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
+						        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home__blob-img" x="-20" y="20" xlink:href="assets/images/mypic.png" />
+              </g>
+            </svg>
           </div>
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          <div class="home__data">
+            <h2 class="home__title">Hi, I'm Ikenna</h2>
+            <h1 class="home__subtitle">Frontend Developer</h1>
+            <p class="home__description">
+              I build frontend products with attractive user interfaces.
+            </p>
+            <a href="#contact" class="button button--flex">
+              Contact Me <i class="uil uil-message button__icon"></i>
             </a>
           </div>
         </div>
-      </section>
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <!-- =================ABOUT ============================= -->
-      <section id="about" class="section about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">A Brief Introduction</span>
+    <!-- =================ABOUT ============================= -->
+    <section id="about" class="section about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">A Brief Introduction</span>
 
-        <div class="about__container container grid">
-          <img
-            src="assets/images/webdevv.svg"
-            alt="web developer illustration"
-            class="about__img"
-          />
-          <div class="about__data">
-            <p class="about__description">
-              Hello there! I'm Ikenna and I enjoy creating things that live on
-              the web. I'm a frontend web developer with over 2 years of
-              experience focused on crafting great web experiences with pixel
-              perfect design. I'm also a proud Chelsea FC fan &#x1f603;
+      <div class="about__container container grid">
+        <img src="assets/images/webdevv.svg" alt="web developer illustration" class="about__img" />
+        <div class="about__data">
+          <p class="about__description">
+            Hello there! I'm Ikenna and I enjoy creating things that live on
+            the web. I'm a frontend web developer with over 2 years of
+            experience focused on crafting great web experiences with pixel
+            perfect design.</p>
+          <p> In my spare time, I like to learn Spanish, play video games and play football. I'm also a
+            proud Chelsea FC fan &#x1f603;
+          </p>
+          <div class="about__technologies">
+            <p>
+              I am good with but not limited to the following technologies
             </p>
-            <div class="about__technologies">
-              <p>
-                I am good with but not limited to the following technologies
-              </p>
-              <div class="technologies">
-                <span class="tech__tab">
-                  <i class="fab fa-html5"></i>
-                  <span>HTML</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="fab fa-css3-alt"></i>
-                  <span>CSS</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="fab fa-sass"></i>
-                  <span>SASS</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="bx bxl-tailwind-css"></i>
-                  <span>TailwindCSS</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="fab fa-js-square"></i>
-                  <span>JavaScript</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="fab fa-react"></i>
-                  <span>React.JS</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="bx bxl-redux"></i>
-                  <span>Redux</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="bx bxl-git"></i>
-                  <span>Git</span>
-                </span>
-                <span class="tech__tab">
-                  <i class="bx bxl-firebase"></i>
-                  <span>Firebase</span>
-                </span>
-              </div>
+            <div class="technologies">
+              <span class="tech__tab">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+              </span>
+              <span class="tech__tab">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+              </span>
+              <span class="tech__tab">
+                <i class="fab fa-sass"></i>
+                <span>SASS</span>
+              </span>
+              <span class="tech__tab">
+                <i class="bx bxl-tailwind-css"></i>
+                <span>TailwindCSS</span>
+              </span>
+              <span class="tech__tab">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </span>
+              <span class="tech__tab">
+                <i class="fab fa-react"></i>
+                <span>React.JS</span>
+              </span>
+              <span class="tech__tab">
+                <i class="bx bxl-redux"></i>
+                <span>Redux</span>
+              </span>
+              <span class="tech__tab">
+                <i class="bx bxl-git"></i>
+                <span>Git</span>
+              </span>
+              <span class="tech__tab">
+                <i class="bx bxl-firebase"></i>
+                <span>Firebase</span>
+              </span>
             </div>
+          </div>
 
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">2+</span>
-                <span class="about__info-name"
-                  >Years <br />
-                  experience</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">25+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  projects</span
-                >
-              </div>
-              <!-- <div>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">2+</span>
+              <span class="about__info-name">Years <br />
+                experience</span>
+            </div>
+            <div>
+              <span class="about__info-title">30+</span>
+              <span class="about__info-name">Completed <br />
+                projects</span>
+            </div>
+            <!-- <div>
 							<span class="about__info-title">2+</span>
 							<span class="about__info-name">Years <br> experience</span>
 						</div> -->
-            </div>
-            <div class="about__buttons">
-              <a
-                download
-                href="assets/01A_Ikenna_Eze_Resume.pdf"
-                class="button button--flex"
-              >
-                Download CV <i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <!-- ======================== SKILLS ============================== -->
-
-      <!-- ============================ PORTFOLIO ========================= -->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Some of my projects</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- ================ PROJECT 1 ===================== -->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/images/worldiechat.png"
-                alt="frontend web development project screenshot"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">WorldieChat</h3>
-                <p class="portfolio__description">
-                  A chat application with different color themes that allows
-                  users to send and receive messages in real time.
-                </p>
-                <div class="portfolio__buttons">
-                  <a
-                    href="https://worldiechat.web.app"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    Demo <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a
-                    href="https://github.com/ikennaezef/worldiechat"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    GitHub <i class="uil uil-github-alt button__icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- ================ PROJECT 2 ===================== -->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/images/fylo-landing.jpg"
-                alt="frontend web development project screenshot"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Fylo Website</h3>
-                <p class="portfolio__description">
-                  A modern dark-themed landing page for a web storage company
-                  adaptable to all devices.
-                </p>
-                <div class="portfolio__buttons">
-                  <a
-                    href="https://ikennaezef.github.io/fylo-landing"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    Demo <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a
-                    href="https://github.com/ikennaezef/fylo-landing"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    GitHub <i class="uil uil-github-alt button__icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- ================ PROJECT 3 ===================== -->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/images/url-short.png"
-                alt="frontend web development project screenshot"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Shortly URL Shortener</h3>
-                <p class="portfolio__description">
-                  A fully responsive custom URL shortener for shortening long
-                  and messy web addresses.
-                </p>
-                <div class="portfolio__buttons">
-                  <a
-                    href="https://ikennaezef.github.io/url-shortener"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    Demo <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a
-                    href="https://github.com/ikennaezef/url-shortener"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    GitHub <i class="uil uil-github-alt button__icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- ================ PROJECT 4 ===================== -->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/images/movio-website.png"
-                alt="frontend web development project screenshot"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Movio V2</h3>
-                <p class="portfolio__description">
-                  A fully responsive web application for finding and saving
-                  information about your favorite movies and TV shows.
-                </p>
-                <div class="portfolio__buttons">
-                  <a
-                    href="https://movio-v2.netlify.app"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    Demo <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a
-                    href="https://github.com/ikennaezef/movio-v2"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    GitHub <i class="uil uil-github-alt button__icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- ================ PROJECT 5 ===================== -->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/images/weather-app.png"
-                alt="frontend web development project screenshot"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Weather App</h3>
-                <p class="portfolio__description">
-                  A fully responsive weather appplication that shows weather
-                  data of your current location as well as that of other major
-                  world cities.
-                </p>
-                <div class="portfolio__buttons">
-                  <a
-                    href="https://ikennaezef.github.io/weather-app"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    Demo <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a
-                    href="https://github.com/ikennaezef/weather-app"
-                    target="_blank"
-                    class="button button--flex button--small portfolio__button"
-                  >
-                    GitHub <i class="uil uil-github-alt button__icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ================= SWIPER ARROWS ===================== -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!-- ======================== PROJECT IN MIND ========================= -->
-      <section class="project section">
-        <div class="project__bg">
-          <div class="project__container container grid">
-            <div class="project__data">
-              <h2 class="project__title">You have a new project?</h2>
-              <p class="project__description">
-                Come on and let's have a chat about it
-              </p>
-              <a href="#contact" class="button button--flex button--white">
-                Contact Me
-                <i class="uil uil-message project__icon button__icon"></i>
-              </a>
-            </div>
-
-            <img
-              src="assets/images/project-img.png"
-              alt="web development or web design project discussion illustration"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================TESTIMONIAL =================== -->
-
-      <!-- ======================= CONTACT ME =========================== -->
-      <section class="section contact" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+234 813 758 4161</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">iykee0333@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Enugu, Nigeria</span>
-              </div>
-            </div>
-          </div>
-
-          <form
-            action="https://formsubmit.co/1cb4b16c99481628e3a8661aa388d84d"
-            method="POST"
-            class="contact__form grid"
-          >
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="name" class="contact__label">Name*</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="Name"
-                  class="contact__input"
-                  required
-                />
-              </div>
-              <div class="contact__content">
-                <label for="email" class="contact__label">Email*</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="Email"
-                  class="contact__input"
-                  required
-                />
-              </div>
-            </div>
-            <div class="contact__content">
-              <label for="project" class="contact__label">Project*</label>
-              <input
-                type="text"
-                id="project"
-                name="Project"
-                class="contact__input"
-                required
-              />
-            </div>
-            <div class="contact__content">
-              <label for="message" class="contact__label">Message</label>
-              <textarea
-                id="message"
-                class="contact__input"
-                name="Message"
-                cols="0"
-                rows="7"
-              ></textarea>
-            </div>
-            <div>
-              <button class="button button--flex submit__btn" type="submit">
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!--================================= FOOTER =========================  -->
-    <footer class="footer" id="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Ikenna</h1>
-            <span class="footer__subtitle">Frontend Developer</span>
-          </div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#home" class="footer__link">Home</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.linkedin.com/in/ikenna-eze-29b245159"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-            <a
-              href="https://www.github.com/ikennaezef"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-github-alt"></i>
-            </a>
-            <a
-              href="https://twitter.com/lkennae_?t=TnBTSkWqpnzlAzNXfmMALQ&s=03"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-twitter-alt"></i>
+          <div class="about__buttons">
+            <a download href="assets/01A_Ikenna_Eze_Resume.pdf" class="button button--flex">
+              Download CV <i class="uil uil-download-alt button__icon"></i>
             </a>
           </div>
         </div>
-
-        <p class="footer__copy">&copy; Ikenna</p>
       </div>
-    </footer>
+    </section>
 
-    <!-- ===================SCROLL TO TOP ============================= -->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    <!-- ======================== SKILLS ============================== -->
 
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    <!-- ============================ PORTFOLIO ========================= -->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Some of my projects. <br> To see more of my projects, check out my <a
+          href="https://github.com/ikennaezef/" target="_blank">GitHub</a> </span>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!-- ================ PROJECT 1 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/worldiechat.png" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">WorldieChat</h3>
+              <p class="portfolio__description">
+                A chat application with different color themes that allows
+                users to send and receive messages in real time. It was built with React & Firebase.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://worldiechat.web.app" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/worldiechat" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ PROJECT 2 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/movio-website.png" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Movio V2</h3>
+              <p class="portfolio__description">
+                A fully responsive web application for finding and saving
+                information about your favorite movies and TV shows. It was built with React, Redux & Styled Components.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://movio-v2.netlify.app" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/movio-v2" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ PROJECT 3 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/piggyvest_clone.PNG" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">PiggyVest Clone</h3>
+              <p class="portfolio__description">
+                This is a fully responsive clone of the <a href="https://piggyvest.com" target="_blank">Piggyvest
+                  landing page.</a>
+                Piggyvest is an online savings platform that helps you save money. It was built with HTML and SASS.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://ikennaezef.github.io/piggyvest-clone" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/piggyvest-clone" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ PROJECT 4 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/url-short.png" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Shortly URL Shortener</h3>
+              <p class="portfolio__description">
+                A fully responsive custom URL shortener for shortening long
+                and messy web addresses built with React.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://ikennaezef.github.io/url-shortener" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/url-shortener" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ================ PROJECT 5 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/weather-app.png" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Weather App</h3>
+              <p class="portfolio__description">
+                A fully responsive weather appplication that shows weather
+                data of your current location as well as that of other major
+                world cities. It was built with Vanilla JavaScript.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://ikennaezef.github.io/weather-app" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/weather-app" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= SWIPER ARROWS ===================== -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ======================== PROJECT IN MIND ========================= -->
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">You have a new project?</h2>
+            <p class="project__description">
+              Come on and let's have a chat about it
+            </p>
+            <a href="#contact" class="button button--flex button--white">
+              Contact Me
+              <i class="uil uil-message project__icon button__icon"></i>
+            </a>
+          </div>
+
+          <img src="assets/images/project-img.png"
+            alt="web development or web design project discussion illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================TESTIMONIAL =================== -->
+
+    <!-- ======================= CONTACT ME =========================== -->
+    <section class="section contact" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">+234 813 758 4161</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">iykee0333@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Enugu, Nigeria</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/1cb4b16c99481628e3a8661aa388d84d" method="POST" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="name" class="contact__label">Name*</label>
+              <input type="text" id="name" name="Name" class="contact__input" required />
+            </div>
+            <div class="contact__content">
+              <label for="email" class="contact__label">Email*</label>
+              <input type="email" id="email" name="Email" class="contact__input" required />
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="project" class="contact__label">Project*</label>
+            <input type="text" id="project" name="Project" class="contact__input" required />
+          </div>
+          <div class="contact__content">
+            <label for="message" class="contact__label">Message</label>
+            <textarea id="message" class="contact__input" name="Message" cols="0" rows="7"></textarea>
+          </div>
+          <div>
+            <button class="button button--flex submit__btn" type="submit">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--================================= FOOTER =========================  -->
+  <footer class="footer" id="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Ikenna</h1>
+          <span class="footer__subtitle">Frontend Developer</span>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/ikenna-eze-29b245159" target="_blank" class="footer__social">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a href="https://www.github.com/ikennaezef" target="_blank" class="footer__social">
+            <i class="uil uil-github-alt"></i>
+          </a>
+          <a href="https://twitter.com/lkennae_?t=TnBTSkWqpnzlAzNXfmMALQ&s=03" target="_blank" class="footer__social">
+            <i class="uil uil-twitter-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&copy; Ikenna</p>
+    </div>
+  </footer>
+
+  <!-- ===================SCROLL TO TOP ============================= -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
