@@ -443,6 +443,7 @@ img {
 .about__technologies .technologies {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: var(--m-1) 0;
 }
 
@@ -860,6 +861,10 @@ img {
 
 	.about__description {
 		text-align: initial;
+	}
+
+	.about__technologies .technologies {
+		justify-content: flex-start;
 	}
 
 	.about__info {

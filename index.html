@@ -131,11 +131,12 @@
             the web. I'm a frontend web developer with over 2 years of
             experience focused on crafting great web experiences with pixel
             perfect design.</p>
-          <p> In my spare time, I like to learn Spanish, play video games and play football. I'm also a
+          <p class="about__description"> In my spare time, I like to learn Spanish, play video games and play football.
+            I'm also a
             proud Chelsea FC fan &#x1f603;
           </p>
           <div class="about__technologies">
-            <p>
+            <p class="about__description">
               I am good with but not limited to the following technologies
             </p>
             <div class="technologies">
@@ -168,6 +169,10 @@
                 <span>Redux</span>
               </span>
               <span class="tech__tab">
+                <i class="cib-next-js"></i>
+                <span>NextJS</span>
+              </span>
+              <span class="tech__tab">
                 <i class="bx bxl-git"></i>
                 <span>Git</span>
               </span>
@@ -185,14 +190,10 @@
                 experience</span>
             </div>
             <div>
-              <span class="about__info-title">30+</span>
+              <span class="about__info-title">35+</span>
               <span class="about__info-name">Completed <br />
                 projects</span>
             </div>
-            <!-- <div>
-							<span class="about__info-title">2+</span>
-							<span class="about__info-name">Years <br> experience</span>
-						</div> -->
           </div>
           <div class="about__buttons">
             <a download href="assets/01A_Ikenna_Eze_Resume.pdf" class="button button--flex">
@@ -215,6 +216,29 @@
         <div class="swiper-wrapper">
           <!-- ================ PROJECT 1 ===================== -->
           <div class="portfolio__content grid swiper-slide">
+            <img src="assets/images/bestbuy_ecommerce.PNG" alt="frontend web development project screenshot"
+              class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">BestBuy Ecommerce</h3>
+              <p class="portfolio__description">
+                A full stack ecommerce web application with stripe payment gateway. It was built using NextJS, sanity
+                CMS and Chakra UI.
+              </p>
+              <div class="portfolio__buttons">
+                <a href="https://bestbuy-ecommerce.vercel.app" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  Demo <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="https://github.com/ikennaezef/bestbuy-ecommerce/" target="_blank"
+                  class="button button--flex button--small portfolio__button">
+                  GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================ PROJECT 2 ===================== -->
+          <div class="portfolio__content grid swiper-slide">
             <img src="assets/images/worldiechat.png" alt="frontend web development project screenshot"
               class="portfolio__img" />
             <div class="portfolio__data">
@@ -236,7 +260,7 @@
             </div>
           </div>
 
-          <!-- ================ PROJECT 2 ===================== -->
+          <!-- ================ PROJECT 3 ===================== -->
           <div class="portfolio__content grid swiper-slide">
             <img src="assets/images/movio-website.png" alt="frontend web development project screenshot"
               class="portfolio__img" />
@@ -259,7 +283,7 @@
             </div>
           </div>
 
-          <!-- ================ PROJECT 3 ===================== -->
+          <!-- ================ PROJECT 4 ===================== -->
           <div class="portfolio__content grid swiper-slide">
             <img src="assets/images/piggyvest_clone.PNG" alt="frontend web development project screenshot"
               class="portfolio__img" />
@@ -283,7 +307,7 @@
             </div>
           </div>
 
-          <!-- ================ PROJECT 4 ===================== -->
+          <!-- ================ PROJECT 5 ===================== -->
           <div class="portfolio__content grid swiper-slide">
             <img src="assets/images/url-short.png" alt="frontend web development project screenshot"
               class="portfolio__img" />
@@ -307,14 +331,15 @@
           </div>
 
 
-          <!-- ================ PROJECT 5 ===================== -->
+          <!-- ================ PROJECT 6 ===================== -->
           <div class="portfolio__content grid swiper-slide">
             <img src="assets/images/quiz.png" alt="frontend web development project screenshot"
               class="portfolio__img" />
             <div class="portfolio__data">
               <h3 class="portfolio__title">QuizWhiz</h3>
               <p class="portfolio__description">
-                A quiz application where you can choose the category, difficulty, type and number of questions to answer. It was built with React and Tailwind.
+                A quiz application where you can choose the category, difficulty, type and number of questions to
+                answer. It was built with React and Tailwind.
               </p>
               <div class="portfolio__buttons">
                 <a href="https://quizwhiz.netlify.app" target="_blank"
@@ -322,33 +347,6 @@
                   Demo <i class="uil uil-arrow-right button__icon"></i>
                 </a>
                 <a href="https://github.com/ikennaezef/quizwhiz" target="_blank"
-                  class="button button--flex button--small portfolio__button">
-                  GitHub <i class="uil uil-github-alt button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <!-- ================ PROJECT 6 ===================== -->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="assets/images/weather-app.png" alt="frontend web development project screenshot"
-              class="portfolio__img" />
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Weather App</h3>
-              <p class="portfolio__description">
-                A fully responsive weather appplication that shows weather
-                data of your current location as well as that of other major
-                world cities. It was built with Vanilla JavaScript.
-              </p>
-              <div class="portfolio__buttons">
-                <a href="https://ikennaezef.github.io/weather-app" target="_blank"
-                  class="button button--flex button--small portfolio__button">
-                  Demo <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-                <a href="https://github.com/ikennaezef/weather-app" target="_blank"
                   class="button button--flex button--small portfolio__button">
                   GitHub <i class="uil uil-github-alt button__icon"></i>
                 </a>
@@ -399,14 +397,6 @@
 
       <div class="contact__container container grid">
         <div>
-          <div class="contact__information">
-            <i class="uil uil-phone contact__icon"></i>
-            <div>
-              <h3 class="contact__title">Call Me</h3>
-              <span class="contact__subtitle">+234 813 758 4161</span>
-            </div>
-          </div>
-
           <div class="contact__information">
             <i class="uil uil-envelope contact__icon"></i>
             <div>
